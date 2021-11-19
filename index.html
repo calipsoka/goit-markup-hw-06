@@ -352,6 +352,7 @@
                                             pattern="[a-zA-Zа-яёА-ЯЁ]+"
                                             title="Имя должно содержать символы кириллицы или латиницы"
                                             required
+                                            autocomplete="off"
                                         />
                                             <svg class="modal-form-icon" width="12" height="12">
                                                 <use href="./images/sprite.svg#icon-name"></use>
@@ -378,10 +379,9 @@
                                             type="email"
                                             class="modal-form-input"
                                             name="user-mail"
-                                            title="johnDou@mail.com"
                                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                             />
-                                            <svg class="modal-form-icon" width="15" height="12">
+                                            <svg class="modal-form-icon" width="15" height="15">
                                                 <use href="./images/sprite.svg#icon-email"></use>
                                             </svg>
                                         </span>
@@ -455,6 +455,24 @@
                                         </a>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="subscribe">
+                                <form action="#" class="subscribe-form">
+                                    <p class="title head"> Подпишитесь на рассылку</p>
+                                    <div class="wrapper">
+                                        <input class="subscribe-form-input" type="email"
+                                            name="subscribe-email"
+                                            placeholder="E-mail"
+                                            autocomplete="off"
+                                        />
+                                        <button class="subscribe-form-btn btn" type="submit">Подписаться
+                                        <svg class="subscribe-form-icon" width="24" height="24">
+                                            <use href="./images/sprite.svg#icon-send"></use>
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                                
                             </div>
                         </div>
                     </footer>
